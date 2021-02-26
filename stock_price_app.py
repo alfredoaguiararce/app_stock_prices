@@ -56,7 +56,16 @@ st.write("""
 #Iniciamos el menu de opciones para la grafica.
 opcion = st.selectbox('Selecciona la variable que deseas graficar.',opciones)
 #Titulo de la grafica
-st.write(f"""### {opcion}""")
+st.write(f""" ### Grafica de la variable '{opcion}' '""")
 #Configuramos la grafica en base a la opcion elegida.
 st.line_chart(dataframe_cotizacion.get(opcion))
+
+st.write("""
+#### Hecho por Alfredo Aguiar Arce , mis redes son :
+
+*   [Github.](https://github.com/alfredoaguiararce)
+*   [LinkedIn.](https://www.linkedin.com/in/alfredoaguiararce/)
+
+""")
+
 
